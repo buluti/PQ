@@ -92,8 +92,9 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Type" Type="int" Nullable="false" />
-    <Property Name="QuestionTemplateId" Type="int" Nullable="false" />
+    <Property Name="DisplayOrder" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Text" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="QuestionTemplateId" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Polls">
     <Key>
@@ -113,6 +114,8 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="nchar" Nullable="false" MaxLength="6" />
+    <Property Name="State" Type="int" Nullable="false" />
     <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Date" Type="datetime" Nullable="false" />
@@ -126,6 +129,7 @@
     <Property Name="VotingSessionId" Type="int" Nullable="false" />
     <Property Name="AnswerTemplateId" Type="int" Nullable="false" />
     <Property Name="QuestionTemplateId" Type="int" Nullable="false" />
+    <Property Name="Value" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
   <EntityType Name="Localizations">
     <Key>
@@ -517,6 +521,8 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="String" Nullable="false" FixedLength="true" MaxLength="6" />
+          <Property Name="State" Type="QuestionnaireModel.VotingSessionState" Nullable="false" />
           <Property Name="Name" Type="String" Nullable="false" />
           <Property Name="Email" Type="String" Nullable="false" />
           <Property Name="Date" Type="DateTime" Nullable="false" />
@@ -547,6 +553,7 @@
           <Property Name="AnswerTemplateId" Type="Int32" Nullable="false" />
           <NavigationProperty Name="QuestionTemplate" Relationship="QuestionnaireModel.SessionResultQuestionTemplate" FromRole="SessionResult" ToRole="QuestionTemplate" />
           <Property Name="QuestionTemplateId" Type="Int32" Nullable="false" />
+          <Property Name="Value" Type="String" Nullable="false" />
         </EntityType>
         <Association Name="VotingSessionSessionResult">
           <End Type="QuestionnaireModel.VotingSession" Role="VotingSession" Multiplicity="1" />
@@ -655,6 +662,11 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EnumType Name="VotingSessionState">
+          <Member Name="Inactive" Value="0" />
+          <Member Name="Active" Value="1" />
+          <Member Name="Complete" Value="2" />
+        </EnumType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -681,8 +693,9 @@
         <MappingFragment StoreEntitySet="AnswerTemplates">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Type" ColumnName="Type" />
-          <ScalarProperty Name="QuestionTemplateId" ColumnName="QuestionTemplateId" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
           <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="QuestionTemplateId" ColumnName="QuestionTemplateId" />
         </MappingFragment>
       </EntityTypeMapping>
       <EntityTypeMapping TypeName="IsTypeOf(QuestionnaireModel.PredefinedAnswer)">
@@ -715,6 +728,8 @@
       <EntityTypeMapping TypeName="IsTypeOf(QuestionnaireModel.VotingSession)">
         <MappingFragment StoreEntitySet="VotingSessions">
           <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="State" ColumnName="State" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="Date" ColumnName="Date" />
@@ -729,6 +744,7 @@
           <ScalarProperty Name="VotingSessionId" ColumnName="VotingSessionId" />
           <ScalarProperty Name="AnswerTemplateId" ColumnName="AnswerTemplateId" />
           <ScalarProperty Name="QuestionTemplateId" ColumnName="QuestionTemplateId" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
