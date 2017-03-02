@@ -87,9 +87,8 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Type" Type="int" Nullable="false" />
-    <Property Name="DisplayOrder" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="Text" Type="nvarchar(max)" Nullable="false" />
     <Property Name="QuestionTemplateId" Type="int" Nullable="false" />
+    <Property Name="Text" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
   <EntityType Name="Polls">
     <Key>
@@ -109,8 +108,6 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Code" Type="nchar" Nullable="false" MaxLength="6" />
-    <Property Name="State" Type="int" Nullable="false" />
     <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Date" Type="datetime" Nullable="false" />
@@ -124,7 +121,6 @@
     <Property Name="VotingSessionId" Type="int" Nullable="false" />
     <Property Name="AnswerTemplateId" Type="int" Nullable="false" />
     <Property Name="QuestionTemplateId" Type="int" Nullable="false" />
-    <Property Name="Value" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
   <EntityType Name="Localizations">
     <Key>

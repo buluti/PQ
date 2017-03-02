@@ -181,8 +181,6 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Code" Type="String" Nullable="false" FixedLength="true" MaxLength="6" />
-    <Property Name="State" Type="QuestionnaireModel.VotingSessionState" Nullable="false" />
     <Property Name="Name" Type="String" Nullable="false" />
     <Property Name="Email" Type="String" Nullable="false" />
     <Property Name="Date" Type="DateTime" Nullable="false" />
@@ -213,7 +211,6 @@
     <Property Name="AnswerTemplateId" Type="Int32" Nullable="false" />
     <NavigationProperty Name="QuestionTemplate" Relationship="QuestionnaireModel.SessionResultQuestionTemplate" FromRole="SessionResult" ToRole="QuestionTemplate" />
     <Property Name="QuestionTemplateId" Type="Int32" Nullable="false" />
-    <Property Name="Value" Type="String" Nullable="false" />
   </EntityType>
   <Association Name="VotingSessionSessionResult">
     <End Type="QuestionnaireModel.VotingSession" Role="VotingSession" Multiplicity="1" />
@@ -322,9 +319,4 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EnumType Name="VotingSessionState">
-    <Member Name="Inactive" Value="0" />
-    <Member Name="Active" Value="1" />
-    <Member Name="Complete" Value="2" />
-  </EnumType>
 </Schema>

@@ -2,8 +2,8 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 02/26/2017 22:32:34
--- Generated from EDMX file: E:\GitHub\Poll Questionnaire\PQ\PollQuestionnaire.UI.Web\Questionnaire.Data\QuestionnaireModel.edmx
+-- Date Created: 02/19/2017 16:52:58
+-- Generated from EDMX file: c:\users\ivan.cojbasic\documents\visual studio 2015\Projects\Questionnaire\Questionnaire.Data\QuestionnaireModel.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
@@ -114,9 +114,8 @@ GO
 CREATE TABLE [dbo].[AnswerTemplates] (
     [Id] int IDENTITY(1,1) NOT NULL,
     [Type] int  NOT NULL,
-    [DisplayOrder] nvarchar(max)  NOT NULL,
-    [Text] nvarchar(max)  NOT NULL,
-    [QuestionTemplateId] int  NOT NULL
+    [QuestionTemplateId] int  NOT NULL,
+    [Text] nvarchar(max)  NOT NULL
 );
 GO
 
@@ -136,8 +135,6 @@ GO
 -- Creating table 'VotingSessions'
 CREATE TABLE [dbo].[VotingSessions] (
     [Id] int IDENTITY(1,1) NOT NULL,
-    [Code] nchar(6)  NOT NULL,
-    [State] int  NOT NULL,
     [Name] nvarchar(max)  NOT NULL,
     [Email] nvarchar(max)  NOT NULL,
     [Date] datetime  NOT NULL,
@@ -150,8 +147,7 @@ CREATE TABLE [dbo].[SessionResults] (
     [Id] int IDENTITY(1,1) NOT NULL,
     [VotingSessionId] int  NOT NULL,
     [AnswerTemplateId] int  NOT NULL,
-    [QuestionTemplateId] int  NOT NULL,
-    [Value] nvarchar(max)  NOT NULL
+    [QuestionTemplateId] int  NOT NULL
 );
 GO
 
