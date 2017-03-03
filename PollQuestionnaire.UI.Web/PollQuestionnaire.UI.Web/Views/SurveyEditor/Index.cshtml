@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Questionnaire Editor";
+}
+
+@*<link href="http://getbootstrap.com/dist/css/bootstrap.css" type="text/css" rel="stylesheet" />*@
+@Scripts.Render("~/bundles/surveyEditor")
+
+<div id="surveyEditorContainer"></div>
+
+<script>
+    var editorOptions = { showEmbededSurveyTab: true }; //see examples below
+    var survey = new SurveyEditor.SurveyEditor("surveyEditorContainer", editorOptions);
+
+    //set function on save callback
+    editor.saveSurveyFunc = saveMySurvey;
+</script>
