@@ -1,8 +1,0 @@
-C:\Users\bky\Source\Repos\PQ\PollQuestionnaire.UI.Web\Questionnaire.DataBroker\bin\Debug\Questionnaire.DataBroker.dll.config
-C:\Users\bky\Source\Repos\PQ\PollQuestionnaire.UI.Web\Questionnaire.DataBroker\bin\Debug\Questionnaire.DataBroker.dll
-C:\Users\bky\Source\Repos\PQ\PollQuestionnaire.UI.Web\Questionnaire.DataBroker\bin\Debug\Questionnaire.DataBroker.pdb
-C:\Users\bky\Source\Repos\PQ\PollQuestionnaire.UI.Web\Questionnaire.DataBroker\bin\Debug\EntityFramework.dll
-C:\Users\bky\Source\Repos\PQ\PollQuestionnaire.UI.Web\Questionnaire.DataBroker\bin\Debug\EntityFramework.xml
-C:\Users\bky\Source\Repos\PQ\PollQuestionnaire.UI.Web\Questionnaire.DataBroker\obj\Debug\Questionnaire.DataBroker.csprojResolveAssemblyReference.cache
-C:\Users\bky\Source\Repos\PQ\PollQuestionnaire.UI.Web\Questionnaire.DataBroker\obj\Debug\Questionnaire.DataBroker.dll
-C:\Users\bky\Source\Repos\PQ\PollQuestionnaire.UI.Web\Questionnaire.DataBroker\obj\Debug\Questionnaire.DataBroker.pdb
