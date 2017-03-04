@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace PollQuestionnaire.UI.Web.Controllers
 {
-    public class SurveyDemoController : Controller
+    public class SurveyController : Controller
     {
         // GET: SurveyDemo
         public ActionResult Index()

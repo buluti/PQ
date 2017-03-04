@@ -201,7 +201,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\SurveyDemoController.cs" />
+    <Compile Include="Controllers\SurveyController.cs" />
     <Compile Include="Controllers\SurveyEditorController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -249,13 +249,15 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Scripts\surveyjs\editor\fonts\icomoon.svg" />
+    <Content Include="Content\surveyjs\fonts\icomoon.svg" />
     <Content Include="Scripts\surveyjs\editor\survey.ko.js" />
     <Content Include="Scripts\surveyjs\editor\survey.ko.min.js" />
-    <Content Include="Scripts\surveyjs\editor\surveyeditor.css" />
+    <Content Include="Content\surveyjs\surveyeditor.css" />
     <Content Include="Scripts\surveyjs\editor\surveyeditor.js" />
     <Content Include="Scripts\surveyjs\editor\surveyeditor.min.js" />
-    <Content Include="Scripts\surveyjs\survey-jquery.js" />
+    <Content Include="Content\surveyjs\survey.css" />
+    <Content Include="Scripts\surveyjs\survey\survey.jquery.js" />
+    <Content Include="Scripts\surveyjs\survey\survey.jquery.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -291,11 +293,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\SurveyDemo\Index.cshtml" />
     <Content Include="Views\SurveyEditor\Index.cshtml" />
-    <Content Include="Scripts\surveyjs\editor\fonts\icomoon.eot" />
-    <Content Include="Scripts\surveyjs\editor\fonts\icomoon.ttf" />
-    <Content Include="Scripts\surveyjs\editor\fonts\icomoon.woff" />
+    <Content Include="Content\surveyjs\fonts\icomoon.eot" />
+    <Content Include="Content\surveyjs\fonts\icomoon.ttf" />
+    <Content Include="Content\surveyjs\fonts\icomoon.woff" />
+    <Content Include="Views\Survey\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

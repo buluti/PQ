@@ -16,6 +16,9 @@ namespace PollQuestionnaire.UI.Web
                         "~/Scripts/surveyjs/editor/survey.ko.min.js",
                         "~/Scripts/surveyjs/editor/surveyeditor.min.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/survey").Include(
+                        "~/Scripts/surveyjs/survey/survey.jquery.min.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
@@ -30,8 +33,13 @@ namespace PollQuestionnaire.UI.Web
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css",
-                      "~/Scripts/surveyjs/editor/surveyeditor.css"));
+                      "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/surveyEditor/css").Include(
+                      "~/Content/surveyjs/surveyeditor.css"));
+
+            bundles.Add(new StyleBundle("~/Content/survey/css").Include(
+                      "~/Content/surveyjs/survey.css"));
         }
     }
 }
