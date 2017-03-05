@@ -27,9 +27,6 @@
                     callback(data, textStatus, jqXHR);
                 }
             }
-        })
-        .ajaxSuccess(function (data, textStatus, jqXHR) {
-            alert('New Access key is: ' + data)
         });
     }
 
@@ -57,11 +54,39 @@
             method: 'POST',
             async: true,
             crossDomain: true,
-            data: { Id: id, Text: survey },
+            data: { Id: id, Json: survey, Text: survey },
             dataType: 'json',
-            complete: function (jqXHR, textStatus) {
+            complete: function (surveyId, jqXHR, textStatus) {
                 if (callback != undefined) {
-                    callback(jqXHR, textStatus);
+                    callback(id, jqXHR, textStatus);
+                }
+            }
+        });
+    }
+
+    this.publishSurvey = function (id, callback) {
+        $.ajax({
+            url: this._urlBase + 'publish/__id__'.replace('__id__', id),
+            method: 'GET',
+            async: true,
+            data: { accessKey: this._tempAccessKey, generateNewId: false },
+            success: function (data, textStatus, jqXHR) {
+                if (callback != undefined) {
+                    callback(id, data, textStatus, jqXHR);
+                }
+            }
+        });
+    }
+
+    this.setUseCookies = function (id, useCookie, callback) {
+        $.ajax({
+            url: this._urlBase + 'setUseCookies/__id__'.replace('__id__', id),
+            method: 'GET',
+            async: true,
+            data: { accessKey: this._tempAccessKey, useCookies: useCookie },
+            success: function (data, textStatus, jqXHR) {
+                if (callback != undefined) {
+                    callback(id, data, textStatus, jqXHR);
                 }
             }
         });
