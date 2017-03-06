@@ -12,6 +12,11 @@
     @Scripts.Render("~/bundles/survey")
 
     <script>
+        var loadSurveyById = function (surveyId) {
+            var survey = new Survey.Model({ surveyId: surveyId })
+            $("#surveyElement").Survey({ model: survey });
+        }
+
         Survey.defaultBootstrapCss.navigationButton = "btn btn-primary";
         Survey.Survey.cssType = "bootstrap";
 
@@ -31,14 +36,15 @@
                         }
                     }
                 }
-            })
-        }
 
-        if (surveyId != undefined) {
-            var survey = new Survey.Model({ surveyId: surveyId })
-            $("#surveyElement").Survey({ model: survey });
+                if (surveyId != undefined) {
+                    loadSurveyById(surveyId);
+                } else {
+                    alert('There are no active surveys published.');
+                }
+            })
         } else {
-            alert('There are no active surveys published.');
+            loadSurveyById(surveyId);
         }
     </script>
 }

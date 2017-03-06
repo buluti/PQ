@@ -79,7 +79,6 @@ E:\GitHub\Poll Questionnaire\PQ\PollQuestionnaire.UI.Web\PollQuestionnaire.UI.We
 E:\GitHub\Poll Questionnaire\PQ\PollQuestionnaire.UI.Web\PollQuestionnaire.UI.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 E:\GitHub\Poll Questionnaire\PQ\PollQuestionnaire.UI.Web\PollQuestionnaire.UI.Web\obj\Debug\PollQuestionnaire.UI.Web.dll
 E:\GitHub\Poll Questionnaire\PQ\PollQuestionnaire.UI.Web\PollQuestionnaire.UI.Web\obj\Debug\PollQuestionnaire.UI.Web.pdb
-E:\GitHub\Poll Questionnaire\PQ\PollQuestionnaire.UI.Web\PollQuestionnaire.UI.Web\obj\Debug\PollQuestionnaire.UI.Web.csprojResolveAssemblyReference.cache
 E:\GitHub\Poll Questionnaire\PQ\PollQuestionnaire.UI.Web\PollQuestionnaire.UI.Web\bin\Microsoft.AspNetCore.Authorization.dll
 E:\GitHub\Poll Questionnaire\PQ\PollQuestionnaire.UI.Web\PollQuestionnaire.UI.Web\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
 E:\GitHub\Poll Questionnaire\PQ\PollQuestionnaire.UI.Web\PollQuestionnaire.UI.Web\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
@@ -134,3 +133,4 @@ E:\GitHub\Poll Questionnaire\PQ\PollQuestionnaire.UI.Web\PollQuestionnaire.UI.We
 E:\GitHub\Poll Questionnaire\PQ\PollQuestionnaire.UI.Web\PollQuestionnaire.UI.Web\bin\System.Diagnostics.DiagnosticSource.xml
 E:\GitHub\Poll Questionnaire\PQ\PollQuestionnaire.UI.Web\PollQuestionnaire.UI.Web\bin\System.Runtime.CompilerServices.Unsafe.xml
 E:\GitHub\Poll Questionnaire\PQ\PollQuestionnaire.UI.Web\PollQuestionnaire.UI.Web\bin\System.Text.Encodings.Web.xml
+E:\GitHub\Poll Questionnaire\PQ\PollQuestionnaire.UI.Web\PollQuestionnaire.UI.Web\obj\Debug\PollQuestionnaire.UI.Web.csprojResolveAssemblyReference.cache

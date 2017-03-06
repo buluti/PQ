@@ -7,4 +7,3 @@ E:\GitHub\Poll Questionnaire\PQ\PollQuestionnaire.UI.Web\Questionnaire.Data\bin\
 E:\GitHub\Poll Questionnaire\PQ\PollQuestionnaire.UI.Web\Questionnaire.Data\bin\Debug\EntityFramework.SqlServer.xml
 E:\GitHub\Poll Questionnaire\PQ\PollQuestionnaire.UI.Web\Questionnaire.Data\obj\Debug\Questionnaire.Data.dll
 E:\GitHub\Poll Questionnaire\PQ\PollQuestionnaire.UI.Web\Questionnaire.Data\obj\Debug\Questionnaire.Data.pdb
-E:\GitHub\Poll Questionnaire\PQ\PollQuestionnaire.UI.Web\Questionnaire.Data\obj\Debug\Questionnaire.Data.csprojResolveAssemblyReference.cache
